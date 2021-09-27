@@ -2,8 +2,9 @@
 # Aryaman Goenka    
 # Soft Dev
 #
-# K05: Better Living Through Amalgamation
+# K05: Better Living Through Amalgamation/Refresehing on Python/Refactoring code to generate random name from the 2 periods of softdev
 #
+# 2021/09/27
 #
 ##
 
@@ -22,6 +23,7 @@ def read():
 def divideClass():
     pd1 = []
     pd2 = []
+    
     lines = read()
 
     for i in lines:
@@ -32,10 +34,16 @@ def divideClass():
             pd1.append(i)
         else:
             pd2.append(i)
-    return pd1, pd2
+        
+        softdev = {
+            'pd1': pd1,
+            'pd2': pd2
+        }
+
+    return softdev
 
 def generateRandomStudent():
-    pd1, pd2 = divideClass()
+    softdev = divideClass()
 
     lenpd1 = len(pd1)
     lenpd2 = len(pd2)
