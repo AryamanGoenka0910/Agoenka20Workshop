@@ -8,9 +8,19 @@
 #
 ##
 
+# SUMMARY OF TRIO DISCUSSION
+# We discussed how my code works and talked about parameterizing the code. 
+# We then went over our plans for refactoring our code to organize the names into 
+# dictionaties using keys to separate the folks from period 1 and period 2. 
 
-#POW_WoW_Summary
-#Discoveries
+# DISCOVERIES
+# Dictionaries are more useful than lists when working with two-dimensional data 
+# (ie names from two class periods)
+
+# QUESTIONS
+# Should we parameterize our functions to take the output of other functions 
+# instead of calling them inside other functions?
+
 
 import random
 
