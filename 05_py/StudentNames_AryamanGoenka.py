@@ -20,10 +20,10 @@ def read():
         lines = f.readlines()
     return lines
 
+
 def divideClass():
     pd1 = []
     pd2 = []
-    
     lines = read()
 
     for i in lines:
@@ -35,27 +35,27 @@ def divideClass():
         else:
             pd2.append(i)
         
-        softdev = {
-            'pd1': pd1,
-            'pd2': pd2
-        }
+    softdev = {
+        'pd1': pd1,
+        'pd2': pd2
+    }
 
     return softdev
 
 def generateRandomStudent():
     softdev = divideClass()
-
-    lenpd1 = len(pd1)
-    lenpd2 = len(pd2)
+    lenpd1 = len(softdev['pd1'])
+    lenpd2 = len(softdev['pd2'])
     randompd = random.randint(1,3)
 
     if randompd <= 1:
         randomstudent = random.randint(0, lenpd1) - 1
-        return (pd1[randomstudent])
+        return (softdev['pd1'][randomstudent])
+        
 
     elif randompd >1 :
         randomstudent = random.randint(0, lenpd2) - 1
-        return (pd2[randomstudent])
+        return (softdev['pd2'][randomstudent])
 
 def main():
     print(generateRandomStudent())
