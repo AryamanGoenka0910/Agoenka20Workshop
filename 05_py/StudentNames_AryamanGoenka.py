@@ -5,6 +5,7 @@
 # K05: Better Living Through Amalgamation/Refresehing on Python/Refactoring code to generate random name from the 2 periods of softdev
 #
 # 2021/09/27
+# Partners: Oscar Wang, Tomas Acuna
 #
 ##
 
@@ -24,6 +25,7 @@
 
 import random
 
+# Reads the file and returns each line as an element in a list
 def read():
     lines = []
     with open('studentnames.txt') as f:
@@ -31,27 +33,31 @@ def read():
     return lines
 
 
+# Using the list given by read(), creates and populates a dictionary
+#  calles softdev with keys corresponding to periods and values 
+#  corresponding to a list of names in the respective periods
 def divideClass():
-    pd1 = []
-    pd2 = []
     lines = read()
+    softdev = {
+        'pd1' = []
+        'pd2' = []
+    }
+
+    # parse through the list of names, differentiating the period 1 
+    # students and sorting everyone accordingly
 
     for i in lines:
         randomnum = random.randint(0,2)
         if "PD1" in i:
             num = i.index(" PD1")
             i = i.replace(" PD1", "", num)
-            pd1.append(i)
+            softdev["pd1"].append(i)
         else:
-            pd2.append(i)
-        
-    softdev = {
-        'pd1': pd1,
-        'pd2': pd2
-    }
-
+            softdev["pd2"].append(i)
+    
     return softdev
 
+# Gives the name of a random student from either period 1 or 2
 def generateRandomStudent():
     softdev = divideClass()
     lenpd1 = len(softdev['pd1'])
