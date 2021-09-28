@@ -21,6 +21,8 @@
 # Should we parameterize our functions to take the output of other functions 
 # instead of calling them inside other functions?
 
+# COMMENTS
+# None
 
 import random
 
