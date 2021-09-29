@@ -28,7 +28,8 @@ def readfile(filename):
     occupations = {}
     for row in csvreader:
         if header[1] != row[1]:
-            occupations[row[0]] = row[1]
+            if row[0] != "Total":
+                occupations[row[0]] = row[1]
     file.close()
     return occupations
 
