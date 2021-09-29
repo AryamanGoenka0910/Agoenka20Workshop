@@ -18,10 +18,11 @@
 # It is a good thing to note that you should never mutate the data unless it is extremely necessary. 
 
 import csv, random
+from os import read
 
 #Function to read csv file and transfer it to an approriate dictionary
-def readfile():
-    file = open("occupations.csv")
+def readfile(filename):
+    file = open(filename)
     csvreader = csv.reader(file)
     header = next(csvreader)
     occupations = {}
@@ -32,19 +33,19 @@ def readfile():
     return occupations
 
 #Using the weights provided in percentages, generate a randomly selected occupation
-def genorateRandom():
-    occupations = readfile()
-    ran = random.randint(1, 100)
+def genorateRandom(occupations):
+    ran = random.random() * 100
     for row in occupations:
         holder = occupations.get(row)
         ran -= float(holder)
         if ran <= 0:
             return row
-    return
+    return "Unemployed" #if user never reaches 0, they are unemployed   
 
 #Run functions and print an output
 def main():
-    print(genorateRandom())
+    print(genorateRandom(readfile("occupations.csv")))
+    ##print(genorateRandom())
 
 if __name__ == "__main__":
     main()
