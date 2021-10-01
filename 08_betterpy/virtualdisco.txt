@@ -1,3 +1,8 @@
+Team AlmostOnTime: Aryaman Goenka, Lucas TomWong, Tomas Acuna
+
 $ python3 -m venv ~/myherozero
 
-This command creates a virtual environment. -m is the notation for calling or using a module. venv is the module being used which creates a virtual environment. It is usually installed with python. ~/myherozero is the subfolder/user directory that is created in order to run any scripts in. 
+This command creates a virtual environment. -m is the notation for calling or using a module. venv is the module being used which creates a virtual environment. It is usually installed with python. ~/myherozero in the subfolder/user directory that is created to run any scripts. 
+
+As described by pythons documentation, "a virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages." From what we understood, this means that each package or application can use a different virtual environment and they will not affect each other. 
+

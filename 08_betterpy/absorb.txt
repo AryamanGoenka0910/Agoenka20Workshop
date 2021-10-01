@@ -1,1 +1,3 @@
-Some people used randchoices, but most people did the same thing, either subtracting from a random percentage with probabilities until it reaches 0 or adding to 0 with probabilities until it reaches the random percentage. Some people who didn’t know about the csv reader used other methods to parse the file such as readlines and split.
+Team AlmostOnTime: Aryaman Goenka, Lucas TomWong, Tomas Acuna
+
+Some people used randchoices, but most people did the same thing, either subtracting from a random percentage with probabilities until it reaches 0 or adding to 0 with probabilities until it reaches the random percentage. Some people who didn’t know about the csv reader used other methods to parse the file such as readlines and split. In addition, some teams adding a test function to their code to verify that their program worked, but for the most part most groups had a similar approach to the problem. 
