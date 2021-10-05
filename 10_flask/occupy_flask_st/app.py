@@ -1,4 +1,4 @@
-# Team Toast
+#  Team Toast
 # Sean Ging, Haotian Gan, Aryman Goenka, Tomas Acuna (Duckies:) Friedrich, Cinnamon, Untitled, Llamy
 # SoftDev
 # K10: Putting Little Pieces Together / Predicting rudimentary flask apps
@@ -30,11 +30,12 @@ def generateRandom(occupations):
     return "Unemployed" #if user never reaches 0, they are unemployed   
 
 
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
 def hello_world():
-    return generateRandom(readfile("occupations.csv"))
+    choice = generateRandom(readfile("occupations.csv"))
+    return render_template('index.html', choice=choice)
 
 app.run(debug=True)
