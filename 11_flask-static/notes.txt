@@ -1,0 +1,4 @@
+Team Notes:
+We think that html files in the static folder will be displayed as html files to the user 
+We think that trying to access /static/foo will cause foo to be downloaded from the server
+We note that this app has a route at / that returns "No hablo queso!" and that app.py is being run with debug=True, meaning that code changes will automatically reload the app
