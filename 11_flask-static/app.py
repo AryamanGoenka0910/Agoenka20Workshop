@@ -1,4 +1,4 @@
-#Team Toast
+# Team Toast
 # Aryaman Goenka, Haotian Gan, Sean Ging, Tomas Acuna
 # Oct 2021
 
