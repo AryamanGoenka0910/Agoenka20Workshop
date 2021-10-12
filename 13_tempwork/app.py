@@ -1,11 +1,13 @@
-#  Team Toast
-# Sean Ging, Haotian Gan, Aryman Goenka, Tomas Acuna (Duckies:) Friedrich, Cinnamon, Untitled, Llamy
+# Team Herald: Aryaman Goenka, Shyne Choi, Zhao Yu Lin, Untitled, Bun bun, Timber
 # SoftDev
-# K10: Putting Little Pieces Together / Predicting rudimentary flask apps
+# K13: Putting Little Pieces Together / Predicting rudimentary flask apps
 # 10-04-2021
 
 import csv, random
 from typing import Collection
+
+from flask import Flask, render_template
+app = Flask(__name__) #create instance of class Flask
 
 #Function to read csv file and transfer it to an approriate dictionary
 def readfile(filename):
@@ -30,18 +32,13 @@ def generateRandom(occupations):
             return row, occupations
     return "Unemployed", occupations #if user never reaches 0, they are unemployed   
 
-
-from flask import Flask, render_template
-app = Flask(__name__) #create instance of class Flask
-
-
 @app.route("/")
 def base_route():
     return "hello"
 
 @app.route("/occupyflaskst")       #assign fxn to route
 def hello_world():
-    choice, result = generateRandom(readfile("occupations.csv"))
+    choice, result = generateRandom(readfile("data/occupations.csv"))
     return render_template('index.html', choice=choice, result=result)
 
 app.run(debug=True)
