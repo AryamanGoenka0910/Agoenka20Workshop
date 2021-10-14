@@ -1,13 +1,9 @@
 ##
 # Elon Musk: Haotian Gan, Aryaman Goenka, Tomas Acuna (Interm Member While Sean is Out)  
 # Soft Dev
-#
 # K06 StI/O: Divine your Destiny!/Python Refresher/Write a Python script to read the file and build an appropriate dictionary from it.
 # Create a function that returns a randomly selected occupation where the results are weighted by the percentage given.
-#
 # 2021/09/28
-#
-#
 ##
 
 # SUMMARY OF TRIO DISCUSSION

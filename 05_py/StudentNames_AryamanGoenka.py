@@ -1,12 +1,9 @@
 ##
 # Aryaman Goenka    
 # Soft Dev
-#
 # K05: Better Living Through Amalgamation/Refresehing on Python/Refactoring code to generate random name from the 2 periods of softdev
-#
 # 2021/09/27
 # Partners: Oscar Wang, Tomas Acuna
-#
 ##
 
 # SUMMARY OF TRIO DISCUSSION

@@ -1,6 +1,8 @@
-
-#POW_WoW_Summary
-#Discoveries
+##
+# Aryaman Goenka    
+# Soft Dev
+# 2021/09/23
+##
 
 import random
 

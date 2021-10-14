@@ -1,6 +1,7 @@
 # Team Toast
 # Aryaman Goenka, Haotian Gan, Sean Ging, Tomas Acuna
-# Oct 2021
+# K11: Some Things Never Change
+# 10-07-2021
 
 # DEMO 
 # basics of /static folder
