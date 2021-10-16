@@ -46,7 +46,8 @@ def authenticate():
     print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
-    print(request.args)
+    print(request.args) #dictionary containing the queries as entries
+   
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
