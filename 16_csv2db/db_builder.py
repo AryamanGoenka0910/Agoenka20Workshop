@@ -34,7 +34,7 @@ with open(filename) as f:
 c.execute("Drop Table if exists Courses")
 command = "Create Table Courses (code Text, mark Integer, id Integer)"    
 c.execute(command)      # test SQL stmt in sqlite3 shell, save as string
-   # run SQL statement
+# run SQL statement
 
 filename = "courses.csv"
 with open(filename) as f:
