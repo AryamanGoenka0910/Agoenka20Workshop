@@ -13,32 +13,36 @@
     <title>foo title</title>
   </head>
 
-  <body style="background-color: grey;">
-   
-    <div style="color: white; text-align: center; width: 100; height: 70; background-color: darkgrey;">
-      <h1>foo heading 1</h1>
+  <body style='background-color: grey; font-family: sans-serif;'>
+    
+    <div id='div1', style='text-align: center; background-color: darkgrey; height: 50px;'>
+      <h1 style='color: white; padding: 5px;'>foo heading 1</h1>
     </div>
     
-    <div>
-        <h3>nav foo</h3>
-      <ul>
-        <li><a href="", style="color: white;">dis</a></li>
-        <li><a href="",  style="color: white;">dat</a></li>
-        <li><a href="",  style="color: white;">de udda ting</a></li>
-      </ul>
+    <div class="grid", style='display: grid; grid-template-columns: 1fr 4fr;background-color: rgb(100, 98, 98);'>
+      
+      <div id='grid1'>
+          <h3 style='padding-left: 5px;'>nav foo</h3>
+        <ul style='list-style-type: none; padding-left: 8px;'>
+          <li><a href="", style='color: white;'>dis</a></li>
+          <li><a href="", style='color: white;'>dat</a></li>
+          <li><a href="", style='color: white;'>de udda ting</a></li>
+        </ul>
+      </div>
+    
+      <div id='grid2'>
+        <h2>main foo heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      
     </div>
     
-    <div>
-      <h2>main foo heading</h2>
-      <p>tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk 
 
-        <br>
-        <br>
-
-        Copyright &copy; 2021 Clyde "Thluffy" Sinclair
-
+    <div id='div2', style='text-align: right; background-color: rgb(37, 37, 37); height: 50px;'>
+      <h4 style='color: darkgrey; padding-right: 5px; padding-top: 20px;'>Copyright &copy; 2021 Clyde "Thluffy" Sinclair</h4>
     </div>
-    
+
   </body>
 
 </html>
