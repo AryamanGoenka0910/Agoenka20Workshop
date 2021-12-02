@@ -1,0 +1,21 @@
+Never Late: Aryaman Goenka, Haotian Gan
+Softdev
+K23
+2021-12-02
+Time Spent: 1h
+
+DISCO:
+- Foundation uses javascript, just like Bootstrap
+- Foundation and Bootstrap both have plugin functionality and can be customized if you download and compile their SASS files
+
+QCC:
+- Grid tables in foundation and bootstrap both have 12 columns
+- Why are there no padding or margin utilities in foundation?
+- Is using the word "grid" for flexbox confusing since grids and flexbox are different things that exist in css?
+
+Q0:
+- We looked through the foundation documentation for an more in-depth understanding of cards, accordions, callouts, and flexbox utilities
+- We didn't need to look through the docs, but we wanted to see some other aspects of foundation
+
+Q1:
+- We prefer using Bootstrap since it provides more out of the box functionality, such as padding/margin classes
