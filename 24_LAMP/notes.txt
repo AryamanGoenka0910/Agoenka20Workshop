@@ -1,0 +1,18 @@
+Aryaman Goenka, Oscar Wang, Sean Ging
+SoftDev
+K24 - LAMP
+2022-01-12
+
+Notes on Dorplets:
+- use SSH (more secure)
+- Never allow ROOT @ droplet
+    - except for intial setup and setting up new user
+- Sudo commands
+    -$su means "switch user" 
+    -$sudo apt install --> Uses admin privledges
+    - only use sudo privledges when needed
+- Creating Droplets
+    - Droplets under "Manage." Click create
+    - Follow Ubuntu --> Basic Plan shared CPU - $5/mo --> New York datacenter region --> SSH Key authentication --> No backups
+
+
