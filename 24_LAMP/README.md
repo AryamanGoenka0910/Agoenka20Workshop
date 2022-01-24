@@ -1,7 +1,7 @@
 # how-to :: CREATE A DIGITAL OCEAN DROPLET WITH UBUNTU AND APACHE
 ---
 ## Overview
-Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apache2 web server on it.
+Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing LAMP on it.
 
 ### Estimated Time Cost: .5 hours
 
@@ -37,13 +37,15 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
     ```
     $ ufw enable
     ```
-    Make sure status shows active ``` $ ufw status  ```
+    ``` 
+    $ ufw status  
+    ```
 - Enabling External Access for Your Regular User with SSH Auth
     ```
-    $ rsync --archive --chown=sammy:sammy ~/.ssh /home/sammy
+    $ rsync --archive --chown=User:User ~/.ssh /home/User
     ```
     ```
-    $ ssh sammy@your_server_ip
+    $ ssh User@your_server_ip
     ```
     ```
     $ sudo command_to_run
@@ -92,13 +94,14 @@ set "PermitRootLogin" to "no"
 Run ```$ sudo service ssh restart```
 
 - Managing Apache
+Stopping Web Server ```$ sudo systemctl stop apache2```
+Starting Web Server ```$ sudo systemctl start apache2 ```
 
 
 ### Resources
 * [Installing LAMP Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04)
 * [Installing Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04)
 * [Sever Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
-
 
 ---
 
