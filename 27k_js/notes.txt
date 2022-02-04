@@ -1,0 +1,18 @@
+Team Last-Row:: Aryaman Goenka, Tomas Acuna
+SoftDev pd0
+K27 -- Basic functions in JavaScript
+2022-02-03
+
+DISCO
+-----------------------------------------------------------------
+* JS is cap sensative
+* There is something called node than can be used to run JS files in the terminal
+* A variable can house a function even though it is not a typical data type
+* A semicolon is required after evey line
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* 
+=================================================================
+
