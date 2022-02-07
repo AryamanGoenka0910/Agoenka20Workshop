@@ -12,6 +12,15 @@
 
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
 
+function fact(n){
+    if (n == 1){
+        return 1;
+    }
+    else {
+        return fact(n-1) * n;
+    }
+}
+
 function fib(n){
     if (n <= 1){
         return 1;
@@ -21,6 +30,9 @@ function fib(n){
     }
 }
 
+console.log(fact(1))
+console.log(fact(3))
+console.log(fact(5))
 console.log(fib(5))
 console.log(fib(6))
 console.log(fib(7))
