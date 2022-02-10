@@ -1,0 +1,7 @@
+Team Reverse: Aryaman Goenka, Haotian Gan
+SoftDev pd0
+K28 -- Manipulating the DOM
+2022-02-08
+
+-- 
+- Their is a hiearchy system with css tags (ex: colors) when using JS to interact with them. 
