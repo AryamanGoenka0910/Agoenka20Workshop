@@ -1,9 +1,8 @@
 // Team Reverse: Aryaman Goenka, Haotian Gan
 // SoftDev pd0
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2022-02-08
+// K29 -- DOMfoolery++
+// 2022-02-10
 // --------------------------------------------------
-
 
 //send diagnostic output to console
 //(Ctrl-Shift-K in Firefox to reveal console)
