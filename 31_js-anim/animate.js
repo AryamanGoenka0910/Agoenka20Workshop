@@ -1,3 +1,12 @@
+/* 
+  Aryaman Goenka
+  Softdev pd0
+  k31 -- canvas based JS animation
+  2022-02-15 
+
+  JS file for JS cavas work    
+*/
+
 var c = document.getElementById('playground');
 var dotButton = document.getElementById('animation');
 var stopButton = document.getElementById('stop');
@@ -32,6 +41,7 @@ var drawDot = (e) => {
 
     ctx.beginPath();
     ctx.arc(c.width / 2, c.width / 2, radius, 0, 2 * Math.PI);
+    ctx.stroke();
     ctx.fill();
 
     if (radius >= 250){
